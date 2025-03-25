@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucid</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="theme-galaxy">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <!-- Status Bubble -->
+    <div class="status-bubble">
+        <div class="time" id="current-time">00:00</div>
+        <div class="battery">
+            <i class="fas fa-battery-full"></i>
+            <span id="battery-level">100%</span>
+        </div>
+    </div>
+
+    <div class="content centered-content">
+        <div class="header">
+            <h1 class="title">Lucid</h1>
+            <p class="subtitle">Explore the web freely</p>
+        </div>
+
+        <div class="search-container">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search the Web Freely">
+                <button type="submit" id="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="shortcuts-container">
+            <div class="shortcut-row">
+                <div class="shortcut-item" onclick="window.open('https://discord.com', '_blank')">
+                    <div class="shortcut-icon discord">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <div class="shortcut-name">Discord</div>
+                </div>
+                <div class="shortcut-item" onclick="window.open('https://github.com', '_blank')">
+                    <div class="shortcut-icon github">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="shortcut-name">GitHub</div>
+                </div>
+                <div class="shortcut-item" onclick="navigateTo('g.html')">
+                    <div class="shortcut-icon games">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="shortcut-name">Games</div>
+                </div>
+                <div class="shortcut-item" onclick="window.open('https://tiktok.com', '_blank')">
+                    <div class="shortcut-icon tiktok">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <div class="shortcut-name">TikTok</div>
+                </div>
+                <div class="shortcut-item" onclick="window.open('https://youtube.com', '_blank')">
+                    <div class="shortcut-icon youtube">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="shortcut-name">YouTube</div>
+                </div>
+            </div>
+            
+            <div class="shortcut-row">
+                <div class="shortcut-item" onclick="window.open('https://netflix.com', '_blank')">
+                    <div class="shortcut-icon netflix">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="shortcut-name">Netflix</div>
+                </div>
+                <div class="shortcut-item" onclick="window.open('https://spotify.com', '_blank')">
+                    <div class="shortcut-icon spotify">
+                        <i class="fab fa-spotify"></i>
+                    </div>
+                    <div class="shortcut-name">Spotify</div>
+                </div>
+                <div class="shortcut-item" onclick="window.open('https://twitch.tv', '_blank')">
+                    <div class="shortcut-icon twitch">
+                        <i class="fab fa-twitch"></i>
+                    </div>
+                    <div class="shortcut-name">Twitch</div>
+                </div>
+                <div class="shortcut-item" onclick="window.open('https://reddit.com', '_blank')">
+                    <div class="shortcut-icon reddit">
+                        <i class="fab fa-reddit"></i>
+                    </div>
+                    <div class="shortcut-name">Reddit</div>
+                </div>
+                <div class="shortcut-item" onclick="navigateTo('a.html')">
+                    <div class="shortcut-icon apps">
+                        <i class="fas fa-th"></i>
+                    </div>
+                    <div class="shortcut-name">More Apps</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+        <div class="nav-item active" onclick="navigateTo('h.html')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="navigateTo('g.html')">
+            <i class="fas fa-gamepad"></i>
+            <span>Games</span>
+        </div>
+        <div class="nav-item" onclick="navigateTo('a.html')">
+            <i class="fas fa-th"></i>
+            <span>Apps</span>
+        </div>
+        <div class="nav-item" onclick="navigateTo('s.html')">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+        </div>
+        <div class="nav-item" onclick="navigateTo('t.html')">
+            <i class="fas fa-paint-brush"></i>
+            <span>Themes</span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme-switcher.js"></script>
+</body>
+</html>

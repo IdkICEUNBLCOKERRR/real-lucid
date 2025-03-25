@@ -1,0 +1,625 @@
+/* Theme Styles */
+
+/* Galaxy Theme (Default) */
+.theme-galaxy {
+  background-color: #0a0e17;
+  color: #ffffff;
+}
+
+.theme-galaxy .stars, .theme-galaxy .twinkling {
+  display: block;
+}
+
+.theme-galaxy .bottom-nav {
+  background-color: rgba(15, 20, 30, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-galaxy .nav-item.active::after {
+  background: linear-gradient(to right, #3498db, #2ecc71);
+}
+
+.theme-galaxy .title {
+  background: linear-gradient(to right, #ffffff, #a0a0a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-galaxy .shortcut-item, 
+.theme-galaxy .setting-card, 
+.theme-galaxy .game-card, 
+.theme-galaxy .app-card,
+.theme-galaxy .theme-name {
+  background-color: rgba(30, 40, 60, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-galaxy .shortcut-item:hover, 
+.theme-galaxy .setting-card:hover, 
+.theme-galaxy .game-card:hover, 
+.theme-galaxy .app-card:hover {
+  background-color: rgba(40, 50, 70, 0.7);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-galaxy .status-bubble {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-galaxy .galaxy-preview {
+  background: linear-gradient(135deg, #0a0e17, #1a2639);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-galaxy .galaxy-preview::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('img/stars.png') repeat top center;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+/* Arctic Theme */
+.theme-arctic {
+  background-color: #e8f4f8;
+  color: #2c3e50;
+}
+
+.theme-arctic .stars, .theme-arctic .twinkling {
+  display: none;
+}
+
+.theme-arctic .bottom-nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-arctic .nav-item {
+  color: #7f8c8d;
+}
+
+.theme-arctic .nav-item.active {
+  color: #3498db;
+}
+
+.theme-arctic .nav-item.active::after {
+  background: linear-gradient(to right, #3498db, #2980b9);
+}
+
+.theme-arctic .title {
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-arctic .subtitle {
+  color: #7f8c8d;
+}
+
+.theme-arctic .shortcut-item, 
+.theme-arctic .setting-card, 
+.theme-arctic .game-card, 
+.theme-arctic .app-card,
+.theme-arctic .theme-name {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.theme-arctic .shortcut-item:hover, 
+.theme-arctic .setting-card:hover, 
+.theme-arctic .game-card:hover, 
+.theme-arctic .app-card:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.theme-arctic #search-input,
+.theme-arctic #game-search,
+.theme-arctic #app-search,
+.theme-arctic .tab-cloak-inputs input {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #2c3e50;
+}
+
+.theme-arctic .search-icon {
+  color: #7f8c8d;
+}
+
+.theme-arctic .status-bubble {
+  background: rgba(255, 255, 255, 0.7);
+  color: #2c3e50;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-arctic .arctic-preview {
+  background: url('img/arctic-bg.png') no-repeat center center;
+  background-size: cover;
+  color: #2c3e50;
+}
+
+/* Emerald Theme */
+.theme-emerald {
+  background-color: #1e3a2f;
+  color: #ecf0f1;
+}
+
+.theme-emerald .stars, .theme-emerald .twinkling {
+  display: none;
+}
+
+.theme-emerald .bottom-nav {
+  background-color: rgba(20, 40, 30, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-emerald .nav-item.active::after {
+  background: linear-gradient(to right, #2ecc71, #27ae60);
+}
+
+.theme-emerald .title {
+  background: linear-gradient(to right, #2ecc71, #27ae60);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-emerald .shortcut-item, 
+.theme-emerald .setting-card, 
+.theme-emerald .game-card, 
+.theme-emerald .app-card,
+.theme-emerald .theme-name {
+  background-color: rgba(30, 70, 50, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-emerald .shortcut-item:hover, 
+.theme-emerald .setting-card:hover, 
+.theme-emerald .game-card:hover, 
+.theme-emerald .app-card:hover {
+  background-color: rgba(40, 80, 60, 0.7);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-emerald .status-bubble {
+  background: rgba(20, 40, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-emerald .emerald-preview {
+  background: linear-gradient(135deg, #1e3a2f, #2ecc71);
+  color: white;
+}
+
+/* Sunset Theme */
+.theme-sunset {
+  background-color: #2c1e30;
+  color: #ecf0f1;
+}
+
+.theme-sunset .stars, .theme-sunset .twinkling {
+  display: none;
+}
+
+.theme-sunset .bottom-nav {
+  background-color: rgba(40, 20, 40, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-sunset .nav-item.active::after {
+  background: linear-gradient(to right, #e74c3c, #c0392b);
+}
+
+.theme-sunset .title {
+  background: linear-gradient(to right, #e74c3c, #c0392b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-sunset .shortcut-item, 
+.theme-sunset .setting-card, 
+.theme-sunset .game-card, 
+.theme-sunset .app-card,
+.theme-sunset .theme-name {
+  background-color: rgba(60, 30, 60, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-sunset .shortcut-item:hover, 
+.theme-sunset .setting-card:hover, 
+.theme-sunset .game-card:hover, 
+.theme-sunset .app-card:hover {
+  background-color: rgba(70, 40, 70, 0.7);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-sunset .status-bubble {
+  background: rgba(40, 20, 40, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-sunset .sunset-preview {
+  background: linear-gradient(135deg, #2c1e30, #e74c3c);
+  color: white;
+}
+
+/* Neon Theme */
+.theme-neon {
+  background-color: #0f0f1a;
+  color: #ecf0f1;
+}
+
+.theme-neon .stars, .theme-neon .twinkling {
+  display: none;
+}
+
+.theme-neon .bottom-nav {
+  background-color: rgba(15, 15, 26, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-neon .nav-item.active::after {
+  background: linear-gradient(to right, #ff00ff, #00ffff);
+}
+
+.theme-neon .title {
+  background: linear-gradient(to right, #ff00ff, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+.theme-neon .shortcut-item, 
+.theme-neon .setting-card, 
+.theme-neon .game-card, 
+.theme-neon .app-card,
+.theme-neon .theme-name {
+  background-color: rgba(20, 20, 30, 0.5);
+  border: 1px solid rgba(255, 0, 255, 0.3);
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+}
+
+.theme-neon .shortcut-item:hover, 
+.theme-neon .setting-card:hover, 
+.theme-neon .game-card:hover, 
+.theme-neon .app-card:hover {
+  background-color: rgba(30, 30, 40, 0.7);
+  border-color: rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.theme-neon .status-bubble {
+  background: rgba(20, 20, 30, 0.7);
+  border: 1px solid rgba(255, 0, 255, 0.3);
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+}
+
+.theme-neon .neon-preview {
+  background-color: #0f0f1a;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-neon .neon-preview::before {
+  content: 'NEON';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: transparent;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+  z-index: 0;
+}
+
+.theme-neon .neon-preview .preview-content {
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  z-index: 1;
+}
+
+/* Midnight Theme */
+.theme-midnight {
+  background-color: #000000;
+  color: #ecf0f1;
+}
+
+.theme-midnight .stars, .theme-midnight .twinkling {
+  display: none;
+}
+
+.theme-midnight .bottom-nav {
+  background-color: rgba(10, 10, 10, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-midnight .nav-item.active::after {
+  background: linear-gradient(to right, #34495e, #2c3e50);
+}
+
+.theme-midnight .title {
+  background: linear-gradient(to right, #ecf0f1, #bdc3c7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-midnight .shortcut-item, 
+.theme-midnight .setting-card, 
+.theme-midnight .game-card, 
+.theme-midnight .app-card,
+.theme-midnight .theme-name {
+  background-color: rgba(20, 20, 20, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-midnight .shortcut-item:hover, 
+.theme-midnight .setting-card:hover, 
+.theme-midnight .game-card:hover, 
+.theme-midnight .app-card:hover {
+  background-color: rgba(30, 30, 30, 0.7);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-midnight .status-bubble {
+  background: rgba(10, 10, 10, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-midnight .midnight-preview {
+  background: linear-gradient(135deg, #000000, #2c3e50);
+  color: white;
+}
+
+/* Desert Theme */
+.theme-desert {
+  background-color: #d9b38c;
+  color: #4a3728;
+}
+
+.theme-desert .stars, .theme-desert .twinkling {
+  display: none;
+}
+
+.theme-desert .bottom-nav {
+  background-color: rgba(200, 160, 120, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-desert .nav-item {
+  color: #7f5539;
+}
+
+.theme-desert .nav-item.active {
+  color: #4a3728;
+}
+
+.theme-desert .nav-item.active::after {
+  background: linear-gradient(to right, #d35400, #e67e22);
+}
+
+.theme-desert .title {
+  background: linear-gradient(to right, #d35400, #e67e22);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-desert .subtitle {
+  color: #7f5539;
+}
+
+.theme-desert .shortcut-item, 
+.theme-desert .setting-card, 
+.theme-desert .game-card, 
+.theme-desert .app-card,
+.theme-desert .theme-name {
+  background-color: rgba(255, 230, 200, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-desert .shortcut-item:hover, 
+.theme-desert .setting-card:hover, 
+.theme-desert .game-card:hover, 
+.theme-desert .app-card:hover {
+  background-color: rgba(255, 240, 220, 0.9);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.theme-desert #search-input,
+.theme-desert #game-search,
+.theme-desert #app-search,
+.theme-desert .tab-cloak-inputs input {
+  background-color: rgba(255, 230, 200, 0.7);
+  color: #4a3728;
+}
+
+.theme-desert .search-icon {
+  color: #7f5539;
+}
+
+.theme-desert .status-bubble {
+  background: rgba(255, 230, 200, 0.7);
+  color: #4a3728;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-desert .desert-preview {
+  background: linear-gradient(135deg, #d9b38c, #e67e22);
+  color: #4a3728;
+}
+
+/* Ocean Theme */
+.theme-ocean {
+  background-color: #1a4b77;
+  color: #ecf0f1;
+}
+
+.theme-ocean .stars, .theme-ocean .twinkling {
+  display: none;
+}
+
+.theme-ocean .bottom-nav {
+  background-color: rgba(20, 60, 100, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-ocean .nav-item.active::after {
+  background: linear-gradient(to right, #3498db, #2980b9);
+}
+
+.theme-ocean .title {
+  background: linear-gradient(to right, #3498db, #2980b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-ocean .shortcut-item, 
+.theme-ocean .setting-card, 
+.theme-ocean .game-card, 
+.theme-ocean .app-card,
+.theme-ocean .theme-name {
+  background-color: rgba(30, 80, 130, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-ocean .shortcut-item:hover, 
+.theme-ocean .setting-card:hover, 
+.theme-ocean .game-card:hover, 
+.theme-ocean .app-card:hover {
+  background-color: rgba(40, 90, 140, 0.7);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-ocean .status-bubble {
+  background: rgba(20, 60, 100, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-ocean .ocean-preview {
+  background: linear-gradient(135deg, #1a4b77, #3498db);
+  color: white;
+}
+
+/* Forest Theme */
+.theme-forest {
+  background-color: #2c4a2c;
+  color: #ecf0f1;
+}
+
+.theme-forest .stars, .theme-forest .twinkling {
+  display: none;
+}
+
+.theme-forest .bottom-nav {
+  background-color: rgba(30, 60, 30, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-forest .nav-item.active::after {
+  background: linear-gradient(to right, #27ae60, #2ecc71);
+}
+
+.theme-forest .title {
+  background: linear-gradient(to right, #27ae60, #2ecc71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-forest .shortcut-item, 
+.theme-forest .setting-card, 
+.theme-forest .game-card, 
+.theme-forest .app-card,
+.theme-forest .theme-name {
+  background-color: rgba(40, 80, 40, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-forest .shortcut-item:hover, 
+.theme-forest .setting-card:hover, 
+.theme-forest .game-card:hover, 
+.theme-forest .app-card:hover {
+  background-color: rgba(50, 90, 50, 0.7);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-forest .status-bubble {
+  background: rgba(30, 60, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-forest .forest-preview {
+  background: linear-gradient(135deg, #2c4a2c, #27ae60);
+  color: white;
+}
+
+/* Volcanic Theme */
+.theme-volcanic {
+  background-color: #3a1c1c;
+  color: #ecf0f1;
+}
+
+.theme-volcanic .stars, .theme-volcanic .twinkling {
+  display: none;
+}
+
+.theme-volcanic .bottom-nav {
+  background-color: rgba(50, 20, 20, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-volcanic .nav-item.active::after {
+  background: linear-gradient(to right, #e74c3c, #c0392b);
+}
+
+.theme-volcanic .title {
+  background: linear-gradient(to right, #e74c3c, #c0392b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.theme-volcanic .shortcut-item, 
+.theme-volcanic .setting-card, 
+.theme-volcanic .game-card, 
+.theme-volcanic .app-card,
+.theme-volcanic .theme-name {
+  background-color: rgba(60, 30, 30, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-volcanic .shortcut-item:hover, 
+.theme-volcanic .setting-card:hover, 
+.theme-volcanic .game-card:hover, 
+.theme-volcanic .app-card:hover {
+  background-color: rgba(70, 40, 40, 0.7);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-volcanic .status-bubble {
+  background: rgba(50, 20, 20, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-volcanic .volcanic-preview {
+  background: linear-gradient(135deg, #3a1c1c, #e74c3c);
+  color: white;
+}
+
+/* Theme Preview Styles */
+.theme-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.theme-card:hover .theme-preview {
+  transform: scale(1.05);
+}

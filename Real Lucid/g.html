@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Lucid</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="theme-galaxy">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <!-- Status Bubble -->
+    <div class="status-bubble">
+        <div class="time" id="current-time">00:00</div>
+        <div class="battery">
+            <i class="fas fa-battery-full"></i>
+            <span id="battery-level">100%</span>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <h1 class="title">Games</h1>
+            <p class="subtitle">Play your favorite games</p>
+            <div class="search-games">
+                <input type="text" id="game-search" placeholder="Search games...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+        </div>
+
+        <div class="games-container">
+            <div class="game-card">
+                <div class="game-img">
+                    <img src="img/games/2048.png" alt="2048">
+                    <div class="game-overlay">
+                        <button class="play-btn" onclick="playGame('2048')">Play</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>2048</h3>
+                    <div class="game-tags">
+                        <span class="tag">Puzzle</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-img">
+                    <img src="img/games/cookie-clicker.png" alt="Cookie Clicker">
+                    <div class="game-overlay">
+                        <button class="play-btn" onclick="playGame('cookie-clicker')">Play</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Cookie Clicker</h3>
+                    <div class="game-tags">
+                        <span class="tag">Idle</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-img">
+                    <img src="img/games/tiny-fishing.png" alt="Tiny Fishing">
+                    <div class="game-overlay">
+                        <button class="play-btn" onclick="playGame('tiny-fishing')">Play</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Tiny Fishing</h3>
+                    <div class="game-tags">
+                        <span class="tag">Casual</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-img">
+                    <img src="img/games/bitlife.png" alt="BitLife">
+                    <div class="game-overlay">
+                        <button class="play-btn" onclick="playGame('bitlife')">Play</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>BitLife</h3>
+                    <div class="game-tags">
+                        <span class="tag">Simulation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-img">
+                    <img src="img/games/vex.png" alt="Vex">
+                    <div class="game-overlay">
+                        <button class="play-btn" onclick="playGame('vex')">Play</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Vex</h3>
+                    <div class="game-tags">
+                        <span class="tag">Platformer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-img">
+                    <img src="img/games/drift-hunters.png" alt="Drift Hunters">
+                    <div class="game-overlay">
+                        <button class="play-btn" onclick="playGame('drift-hunters')">Play</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Drift Hunters</h3>
+                    <div class="game-tags">
+                        <span class="tag">Racing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-img">
+                    <img src="img/games/tube-jumpers.png" alt="Tube Jumpers">
+                    <div class="game-overlay">
+                        <button class="play-btn" onclick="playGame('tube-jumpers')">Play</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Tube Jumpers</h3>
+                    <div class="game-tags">
+                        <span class="tag">Multiplayer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-img">
+                    <img src="img/games/tag.png" alt="Tag">
+                    <div class="game-overlay">
+                        <button class="play-btn" onclick="playGame('tag')">Play</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Tag</h3>
+                    <div class="game-tags">
+                        <span class="tag">Multiplayer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-img">
+                    <img src="img/games/bloons-td.png" alt="Bloons TD">
+                    <div class="game-overlay">
+                        <button class="play-btn" onclick="playGame('bloons-td')">Play</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Bloons TD</h3>
+                    <div class="game-tags">
+                        <span class="tag">Tower Defense</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-img">
+                    <img src="img/games/duck-life.png" alt="Duck Life">
+                    <div class="game-overlay">
+                        <button class="play-btn" onclick="playGame('duck-life')">Play</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Duck Life</h3>
+                    <div class="game-tags">
+                        <span class="tag">Adventure</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-img">
+                    <img src="img/games/papas-games.png" alt="Papa's Games">
+                    <div class="game-overlay">
+                        <button class="play-btn" onclick="playGame('papas-games')">Play</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Papa's Games</h3>
+                    <div class="game-tags">
+                        <span class="tag">Simulation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-img">
+                    <img src="img/games/8-ball-pool.png" alt="8 Ball Pool">
+                    <div class="game-overlay">
+                        <button class="play-btn" onclick="playGame('8-ball-pool')">Play</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>8 Ball Pool</h3>
+                    <div class="game-tags">
+                        <span class="tag">Sports</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+        <div class="nav-item" onclick="navigateTo('h.html')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item active" onclick="navigateTo('g.html')">
+            <i class="fas fa-gamepad"></i>
+            <span>Games</span>
+        </div>
+        <div class="nav-item" onclick="navigateTo('a.html')">
+            <i class="fas fa-th"></i>
+            <span>Apps</span>
+        </div>
+        <div class="nav-item" onclick="navigateTo('s.html')">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+        </div>
+        <div class="nav-item" onclick="navigateTo('t.html')">
+            <i class="fas fa-paint-brush"></i>
+            <span>Themes</span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme-switcher.js"></script>
+    <script src="js/g.js"></script>
+</body>
+</html>

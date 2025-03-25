@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Lucid</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="theme-galaxy">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <!-- Status Bubble -->
+    <div class="status-bubble">
+        <div class="time" id="current-time">00:00</div>
+        <div class="battery">
+            <i class="fas fa-battery-full"></i>
+            <span id="battery-level">100%</span>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <h1 class="title">Settings</h1>
+            <p class="subtitle">Customize your experience</p>
+        </div>
+
+        <div class="settings-container">
+            <div class="settings-section">
+                <div class="setting-card">
+                    <div class="setting-icon">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <div class="setting-content">
+                        <h3>Auto Cloak</h3>
+                        <p>Automatically disguise this site when you visit</p>
+                        <label class="switch">
+                            <input type="checkbox" id="auto-cloak">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <div class="setting-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="setting-content">
+                        <h3>Launch Cloak</h3>
+                        <p>Open Lucid in a disguised window</p>
+                        <button class="launch-btn" onclick="launchCloak()">Launch</button>
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <div class="setting-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="setting-content">
+                        <h3>Anti-Close</h3>
+                        <p>Prevent accidental closing of this tab</p>
+                        <label class="switch">
+                            <input type="checkbox" id="anti-close">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <div class="setting-card">
+                    <div class="setting-icon">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <div class="setting-content">
+                        <h3>Tab Cloak</h3>
+                        <p>Change how this tab appears in your browser</p>
+                        <div class="tab-cloak-inputs">
+                            <input type="text" id="tab-title" placeholder="Tab Title">
+                            <input type="text" id="tab-icon" placeholder="Icon URL">
+                            <button class="apply-btn" onclick="applyTabCloak()">Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <div class="setting-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="setting-content">
+                        <h3>About Lucid</h3>
+                        <p>Version: 1.0.0</p>
+                        <p>A web proxy with multiple themes and games.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+        <div class="nav-item" onclick="navigateTo('h.html')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="navigateTo('g.html')">
+            <i class="fas fa-gamepad"></i>
+            <span>Games</span>
+        </div>
+        <div class="nav-item" onclick="navigateTo('a.html')">
+            <i class="fas fa-th"></i>
+            <span>Apps</span>
+        </div>
+        <div class="nav-item active" onclick="navigateTo('s.html')">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+        </div>
+        <div class="nav-item" onclick="navigateTo('t.html')">
+            <i class="fas fa-paint-brush"></i>
+            <span>Themes</span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme-switcher.js"></script>
+</body>
+</html>
